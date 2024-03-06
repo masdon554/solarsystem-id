@@ -1,5 +1,42 @@
 /*IMG*/
-.img-500px{
+.img-200px{
     width: 200px;
     height: 200px;
+}
+.img-200px-landscape{
+    width: 200px;
+    height: 200px; 
+    object-fit: cover; 
+    object-position: 50% 0;
+  }
+/*TEXT*/
+.text-planet{
+    font-size:medium;
+}
+.text-terkecil{
+    font-size: smaller;
+}
+.text-kecil{
+    font-size: small;
+}
+.text-hitam{
+    color: #000;
+}
+.reddwarf{
+    color: red;
+}
+.browndwarf{
+    color: brown;
+}
+.subbrowndwarf{
+    color: burlywood;
+}
+.yellowdwarf{
+    color: yellow;
+}
+.orangedwarf{
+    color: orange;
+}
+.bg-hitam{
+    background-color: #000;
 }
