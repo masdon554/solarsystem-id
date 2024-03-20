@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Distance - SolarSystem ID</title>
+    <meta name="author" content="@masdon554" />
+    <link rel="icon" type="image/x-icon" href="https://avatars.githubusercontent.com/u/145627072?v=4" />
+    <!--Bootstrap Core-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--Others Style-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="text-center">
+        <header class="">
+        </header>   
+        <main class="">
+            <section class="py-5">
+                <div class="container px-5 mb-5">
+                    <div class="text-center mb-5">
+                        <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline"><a style="text-decoration: none;" class="text-dark font-weight-bold" href="https://masdon554.github.io/project/">SOLARSYSTEM_ID</a></span></h1>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="">
+                            <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                                <strong>Press the sign (!),</strong> You can see at a glance information about the object.
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                            <!-- Project Star Page 2/Spectral Type-->
+                            <div class="card bg-info">
+                                <div class="card-body border border-dark p-0">
+                                    <div class="d-flex align-items-center">
+                                        <div class="p-5 border border-dark bg-white rounded">
+                                            <!--5 LY-->
+                                            <!--Button Back-->
+                                            <div style="object-fit: contain;text-align: left;">
+                                                <button class="mb-2 btn btn-dark" onclick="goBack()">&laquo; Back</button>
+                                            </div>
+                                            <p class="form-control bg-dark text-white rounded font-weight-bold text-uppercase mb-5">5 light years</p>
+                                            <div class="container">
+                                                <div class="row">
+                                                    <!--SOLAR-->
+                                                    <div class="col mb-2">
+                                                        <img class="img-thumbnail rounded rounded-circle mb-3 img-200px" src="https://media4.giphy.com/media/PNf2Ke7gn6oDK/giphy.gif" title="G2V" alt="Solar">
+                                                        <p class="form-control bg-hitam">
+                                                        <a class="text-white font-weight-bold" style="text-decoration: none;">THE SUN</a>   
+                                                        <br>
+                                                        <code>SOLAR</code>
+                                                        <i class="bi bi-info-circle btn text-white" data-toggle="modal" data-target="#solar">!</i>
+                                                        </p>
+                                                    </div>
+                                                    <!--ALPHA CENTAURI A-->
+                                                    <div class="col mb-2">
+                                                        <img class="img-thumbnail rounded rounded-circle mb-3 img-200px" src="https://exoplanets.nasa.gov/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSXBNR0ZoTldOaFpHWXROVGt6T0MwME5EbGtMVGhqTlRndFlXRXpNR1ptWmpKaVlXSTVCam9HUlZRNkVHUnBjM0J2YzJsMGFXOXVTU0pIYVc1c2FXNWxPeUJtYVd4bGJtRnRaVDBpWlhOdk1USTBNV1YzTG1wd1pXY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMlZ6YnpFeU5ERmxkeTVxY0dWbkJqc0dWRG9SWTI5dWRHVnVkRjkwZVhCbFNTSVBhVzFoWjJVdmFuQmxad1k3QmxRNkVYTmxjblpwWTJWZmJtRnRaVG9LYkc5allXdz0iLCJleHAiOm51bGwsInB1ciI6ImJsb2Jfa2V5In19--f8a0d78842d1121614da86d65af424741a154785/eso1241ew.jpeg" title="G2V" alt="Alpha Centauri">
+                                                        <p class="form-control bg-hitam">
+                                                            <a class="text-white font-weight-bold" style="text-decoration: none;">ALPHA CENTAURI A</a>   
+                                                            <br>
+                                                            <code>Rigil Kentaurus</code>
+                                                            <i class="bi bi-info-circle btn text-white" data-toggle="modal" data-target="#rigilkentaurus">!</i>
+                                                        </p>
+                                                    </div>
+                                                    <!--ALPHA CENTAURI B-->
+                                                    <div class="col mb-2">
+                                                        <img class="img-thumbnail rounded rounded-circle mb-3 img-200px" src="https://exoplanets.nasa.gov/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSXBNR0ZoTldOaFpHWXROVGt6T0MwME5EbGtMVGhqTlRndFlXRXpNR1ptWmpKaVlXSTVCam9HUlZRNkVHUnBjM0J2YzJsMGFXOXVTU0pIYVc1c2FXNWxPeUJtYVd4bGJtRnRaVDBpWlhOdk1USTBNV1YzTG1wd1pXY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMlZ6YnpFeU5ERmxkeTVxY0dWbkJqc0dWRG9SWTI5dWRHVnVkRjkwZVhCbFNTSVBhVzFoWjJVdmFuQmxad1k3QmxRNkVYTmxjblpwWTJWZmJtRnRaVG9LYkc5allXdz0iLCJleHAiOm51bGwsInB1ciI6ImJsb2Jfa2V5In19--f8a0d78842d1121614da86d65af424741a154785/eso1241ew.jpeg" title="K1V" alt="Alpha Centauri B">
+                                                        <p class="form-control bg-hitam">
+                                                            <a class="text-white font-weight-bold" style="text-decoration: none;">ALPHA CENTAURI B</a>   
+                                                            <br>
+                                                            <code>Toliman</code>
+                                                            <i class="bi bi-info-circle btn text-white" data-toggle="modal" data-target="#toliman">!</i>
+                                                        </p>
+                                                    </div>
+                                                    <!--ALPHA CENTAURI C-->
+                                                    <div class="col mb-2">
+                                                        <img style="object-position: 50%;" class="img-thumbnail rounded rounded-circle mb-3 img-200px-landscape" src="https://www.eso.org/public/archives/videos/videoframe/eso1735b.jpg" title="M5.5Ve" alt="Alpha Centauri C">
+                                                        <p class="form-control bg-hitam">
+                                                            <a class="text-white font-weight-bold" style="text-decoration: none;">ALPHA CENTAURI C</a>   
+                                                            <br>
+                                                            <code>Proxima Centauri</code>
+                                                            <i class="bi bi-info-circle btn text-white" data-toggle="modal" data-target="#proximacentauri">!</i>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--10 LY-->
+                                            <p class="form-control bg-dark text-white rounded font-weight-bold text-uppercase mb-5">10 light years</p>
+                                            <div class="container">
+                                                <!--10 LY - LINE 1-->
+                                                <div class="row">
+                                                    <!--BARNARD STAR-->
+                                                    <div class="col mb-2">
+                                                        <img class="img-thumbnail rounded rounded-circle mb-3 img-200px-landscape" src="https://www.universetoday.com/wp-content/uploads/2015/09/Barnard-model-red-dwarf.jpg" title="M4.0Ve" alt="Barnard Star">
+                                                        <p class="form-control bg-hitam text-white">
+                                                        <a class="text-white font-weight-bold" style="text-decoration: none;">BARNARD</a>   
+                                                        <br>
+                                                        <code>Proxima Ophiuchi</code>
+                                                        <i class="bi bi-info-circle btn text-white" data-toggle="modal" data-target="#barnard">!</i>
+                                                        </p>
+                                                    </div>
+                                                    <!--Luhman 16 A-->
+                                                    <div class="col mb-2">
+                                                        <img class="img-thumbnail rounded rounded-circle mb-3 img-200px" src="https://supernovacondensate.files.wordpress.com/2014/02/brown-dwarf.jpg" title="L7.5" alt="Luhman 16A">
+                                                        <p class="form-control bg-hitam text-white">
+                                                            <a class="text-white    font-weight-bold" style="text-decoration: none;">LUHMAN 16A</a>   
+                                                            <br>
+                                                            <code>WISE 1049−5319 A</code>
+                                                            <i class="bi bi-info-circle btn text-white" data-toggle="modal" data-target="#luhman16a">!</i>
+                                                        </p>
+                                                    </div>
+                                                    <!--Luhman 16 B-->
+                                                    <div class="col mb-2">
+                                                        <img class="img-thumbnail rounded rounded-circle mb-3 img-200px" src="https://supernovacondensate.files.wordpress.com/2014/02/brown-dwarf.jpg" title="T0.5 &plusmn; 1" alt="Luhman 16B">
+                                                        <p class="form-control bg-hitam">
+                                                            <a class="text-white font-weight-bold" style="text-decoration: none;">LUHMAN 16B</a>   
+                                                            <br>
+                                                            <code>WISE 1049−5319 B</code>
+                                                            <i class="bi bi-info-circle btn text-white" data-toggle="modal" data-target="#luhman16a">!</i>
+                                                        </p>
+                                                    </div>
+                                                    <!--WISE 0855−0714-->
+                                                    <div class="col mb-2">
+                                                        <img class="img-thumbnail rounded rounded-circle mb-3 img-200px-landscape" src="https://upload.wikimedia.org/wikipedia/commons/3/33/Class-ii_cubicapoc.png" title="Y4V" alt="WISE 0855−0714">
+                                                        <p class="form-control bg-hitam text-white">
+                                                            <a class="text-white font-weight-bold" style="text-decoration: none;">WISE 0855−0714</a>   
+                                                            <br>
+                                                            <code>W0855</code>
+                                                            <i class="bi bi-info-circle btn text-white" data-toggle="modal" data-target="#wise08550714">!</i>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <!--10 LY - LINE 2-->
+                                                <div class="row">
+                                                    <!--WOLF359 STAR-->
+                                                    <div class="col mb-2">
+                                                        <img class="img-thumbnail rounded rounded-circle mb-3 img-200px-landscape" src="https://www.universetoday.com/wp-content/uploads/2015/09/Barnard-model-red-dwarf.jpg" title="M6V" alt="Wolf359 Star">
+                                                        <p class="form-control bg-hitam text-white">
+                                                        <a class="text-white font-weight-bold" style="text-decoration: none;">WOLF 359</a>   
+                                                        <br>
+                                                        <code>CN Leonis</code>
+                                                        <i class="bi bi-info-circle btn text-white" data-toggle="modal" data-target="#wolf359">!</i>
+                                                        </p>
+                                                    </div>
+                                                    <!--Lalande 21185-->
+                                                    <div class="col mb-2">
+                                                        <img class="img-thumbnail rounded rounded-circle mb-3 img-200px*" src="http://www.exoplanetkyoto.org/exohtml/Stars/M1.bmp" title="M2V" alt="Lalande 21185">
+                                                        <p class="form-control bg-hitam text-white">
+                                                            <a class="text-white font-weight-bold" style="text-decoration: none;">LALANDE 21185</a>   
+                                                            <br>
+                                                            <code>Gliese 411</code>
+                                                            <i class="bi bi-info-circle btn text-white" data-toggle="modal" data-target="#lalande21185">!</i>
+                                                        </p>
+                                                    </div>
+                                                    <!--Alpha Canis Majoris A-->
+                                                    <div class="col mb-2">
+                                                        <img class="img-thumbnail rounded rounded-circle mb-3 img-200px-landscape" src="https://upload.wikimedia.org/wikipedia/commons/d/d1/A-type_star_in_Celestia_08.png" title="A0mA1 Va" alt="Alpha Canis Majoris A">
+                                                        <p class="form-control bg-hitam">
+                                                            <a class="text-white font-weight-bold" style="text-decoration: none;">ALPHA CANIS MAJORIS A</a>   
+                                                            <br>
+                                                            <code>Sirius A</code>
+                                                            <i class="bi bi-info-circle btn text-white" data-toggle="modal" data-target="#siriusa">!</i>
+                                                        </p>
+                                                    </div>
+                                                    <!--Alpha Canis Majoris B-->
+                                                    <div class="col mb-2">
+                                                        <img class="img-thumbnail rounded rounded-circle mb-3 img-200px-landscape" src="https://aasnova.org/wp-content/uploads/2016/08/fig11.jpg" title="DA2" alt="Alpha Canis Majoris">
+                                                        <p class="form-control bg-hitam text-white">
+                                                            <a class="text-white font-weight-bold" style="text-decoration: none;">ALPHA CANIS MAJORIS B</a>   
+                                                            <br>
+                                                            <code>Sirius B</code>
+                                                            <i class="bi bi-info-circle btn text-white" data-toggle="modal" data-target="#siriusb">!</i>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                    <!--10 LY - LINE 3-->
+                                                    <div class="row">
+                                                    <!--Gliese 65 A-->
+                                                    <div class="col mb-2">
+                                                        <img class="img-thumbnail rounded rounded-circle mb-3 img-200px-landscape" src="https://www.universetoday.com/wp-content/uploads/2015/09/Barnard-model-red-dwarf.jpg" title="M5.5V" alt="Gliese 65 A">
+                                                        <p class="form-control bg-hitam text-white">
+                                                            <a class="text-white font-weight-bold" style="text-decoration: none;">GLIESE 65 A</a>   
+                                                            <br>
+                                                            <code>BL Ceti</code>
+                                                            <i class="bi bi-info-circle btn text-white" data-toggle="modal" data-target="#gliese65a">!</i>
+                                                        </p>
+                                                    </div>
+                                                    <!--Gliese 65 B-->
+                                                    <div class="col mb-2">
+                                                        <img class="img-thumbnail rounded rounded-circle mb-3 img-200px-landscape" src="https://www.universetoday.com/wp-content/uploads/2015/09/Barnard-model-red-dwarf.jpg" title="M6V" alt="Gliese 65 B">
+                                                        <p class="form-control bg-hitam">
+                                                            <a class="text-white font-weight-bold" style="text-decoration: none;">GLIESE 65 B</a>   
+                                                            <br>
+                                                            <code>UV Ceti</code>
+                                                            <i class="bi bi-info-circle btn text-white" data-toggle="modal" data-target="#gliese65b">!</i>
+                                                        </p>
+                                                    </div>
+                                                    <!--Ross 154-->
+                                                    <div class="col mb-2">
+                                                        <img class="img-thumbnail rounded rounded-circle mb-3 img-200px-landscape" src="https://www.universetoday.com/wp-content/uploads/2015/09/Barnard-model-red-dwarf.jpg" title="M3.5V" alt="Ross 154">
+                                                        <p class="form-control bg-hitam text-white">
+                                                            <a class="text-white font-weight-bold" style="text-decoration: none;">ROSS 154</a>   
+                                                            <br>
+                                                            <code>V1216 Sagittarii</code>
+                                                            <i class="bi bi-info-circle btn text-white" data-toggle="modal" data-target="#ross154">!</i>
+                                                        </p>
+                                                    </div>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p class="lead">Proyek ini dibuat sejak 2023. Dibuat oleh <a class="text-dark font-italic font-weight-bold" style="text-decoration: none;" target="_blank" href="https://github.com/masdon554">@masdon554</a></p>
+        </footer>
+        <!--ATTRIBUT-->
+        <!-- Popup Segera Datang-->
+        <div class="modal fade" id="segeradatang" tabindex="-1" role="dialog" aria-labelledby="expsegeradatang" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="expsegeradatang">Pesan</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Coming soon...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+                </div>
+                </div>
+            </div>
+        </div>
+        <!-- Popup On Object-->
+        <!--SOLAR INFO-->
+        <div class="modal fade" id="solar" tabindex="-1" role="dialog" aria-labelledby="expmatahari" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="expsmatahari">Solar (The Sun)</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" style="text-align: justify;">
+                    The Sun or Solar is the star at the center of the solar system. Its shape is almost round and consists of hot plasma mixed with magnetic fields. Its diameter is about 1,392,684 km, about 109 times the diameter of the Earth, and its mass (about 2×10<sup>30</sup> kilograms, 330,000 times the mass of the Earth) represents approximately 99.86 % of the total mass of the solar system. The sun is the largest celestial body in the Milky Way galaxy, even 10 times the size of the largest planet in the solar system, Jupiter.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+                </div>
+                </div>
+            </div>
+        </div>
+        <!--RIGIL INFO-->
+        <div class="modal fade" id="rigilkentaurus" tabindex="-1" role="dialog" aria-labelledby="exprigilkentaurus" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exprigilkentaurus">Alpha Centauri A (Rigil Kentaurus)</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" style="text-align: justify;">
+                    Alpha Centauri A, also known as Rigil Kentaurus, is a major member of the triple star system. It is a sun-like main sequence star with a similar yellowish color whose stellar classification is spectral type G2-V; its mass is about 10% greater than the Sun, with a radius about 22% larger. When considered one of the brightest stars in the night sky, it is the fourth brightest star at an apparent magnitude of +0.01, slightly dimmer than Arcturus at an apparent magnitude of −0.05.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+                </div>
+                </div>
+            </div>
+        </div>
+        <!--TOLIMAN INFO-->
+        <div class="modal fade" id="toliman" tabindex="-1" role="dialog" aria-labelledby="exptoliman" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exptoliman">Alpha Centauri B (Toliman)</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" style="text-align: justify;">
+                    Alpha Centauri B, also known as Toliman, is a secondary star of a triple star system. It is a main sequence star with spectral type K1-V, making it more orange in color than Alpha Centauri A; it has about 90% the mass of the Sun and a diameter 14% smaller. Despite having a lower luminosity than A, Alpha Centauri B emits more energy in the X-ray band. The light curve varied over a short time scale, and at least one flare was observed. It is more magnetically active than Alpha Centauri A, showing cycles of 8.2 &plusmn; 0.2 years compared to 11 years for the Sun, and has about half the minimum to peak variation of the Sun's coronal luminosity. Alpha Centauri B has an apparent magnitude of +1.35 slightly fainter than Mimosa.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+                </div>
+                </div>
+            </div>
+        </div>
+        <!--PROXIMA CENTAURI STAR INFO-->
+        <div class="modal fade" id="proximacentauri" tabindex="-1" role="dialog" aria-labelledby="expprocent" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="expprocent">Alpha Centauri C (Proxima Centauri)</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" style="text-align: justify;">
+                    Alpha Centauri C, better known as Proxima Centauri, is a small main sequence red dwarf of spectral class M6-Ve. It has an absolute magnitude of +15.60 or 20000 times fainter than the Sun. Its mass is calculated to be 0.1221 solar masses. It is the closest star to the Sun but is too faint to be seen with the naked eye.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+                </div>
+                </div>
+            </div>
+        </div>
+        <!--BARNARD STAR INFO-->
+        <div class="modal fade" id="barnard" tabindex="-1" role="dialog" aria-labelledby="expbarnard" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="expbarnard">Barnard Star (Proxima Ophiuchi)</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" style="text-align: justify;">
+                    Barnard's Star is a small red dwarf star in the constellation Ophiuchus. At a distance of 5.96 light years (1.83 parsecs) from Earth, it is the fourth closest known individual star to the Sun after the three components of the Alpha Centauri system, and the closest star in the northern hemisphere. The star's mass is about 16% that of the Sun, and its diameter is 19% that of the Sun. Despite its proximity, this star has a faint visual magnitude of +9.5 and is not visible to the naked eye; it is much brighter in infrared than in visible light.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+                </div>
+                </div>
+            </div>
+        </div>
+        <!--LUHMAN 16A STAR INFO-->
+        <div class="modal fade" id="luhman16a" tabindex="-1" role="dialog" aria-labelledby="expluhman16a" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="expluhman16a">Luhman 16</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" style="text-align: justify;">
+                    Luhman 16 (also called WISE 1049−5319 or WISE J104915.57−531906.1) is a binary brown dwarf system in the southern constellation Vela at a distance of about 6.5 light years (2.0 parsecs) from the Sun. It is the closest known brown dwarf and the closest system discovered since Barnard's Star's proper motion measurements in 1916. The primary is spectral type L7.5 and the secondary is type T0.5 ± 1 (and hence near the L–T transition). The masses of Luhman 16 A and B are 33.5 and 28.6 Jupiter masses, respectively, and their ages are estimated to be 600–800 million years. Luhman 16 A and B orbit each other at a distance of about 3.5 astronomical units with an orbital period of approximately 27 years.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+                </div>
+                </div>
+            </div>
+        </div>
+        <!--WISE 0855−0714 STAR INFO-->
+        <div class="modal fade" id="wise08550714" tabindex="-1" role="dialog" aria-labelledby="expprocent" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="expprocent">WISE 0855−0714 (W0855)</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" style="text-align: justify;">
+                    WISE 0855−0714 is a sub-brown dwarf located 2.28 &plusmn; 0.01 parsec or about 7.43 Light Years from Earth, therefore the fourth dwarf- closest star or (sub-) brown dwarf system to the Sun, whose discovery was announced in April 2014 by Kevin Luhman using data from Wide-field Independent Survey Explorer (WISE).It is also the coldest object of its kind discovered in interstellar space, having temperatures ranging from 225 to 260 K (−48 to −13 <sup>o</sup>C; −55 to 8 <sup> o</sup>F).
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+                </div>
+                </div>
+            </div>
+        </div>
+        <!--WOLF 359 STAR INFO-->
+        <div class="modal fade" id="wolf359" tabindex="-1" role="dialog" aria-labelledby="expprocent" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="expprocent">Wolf 359 (CN Leonis)</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" style="text-align: justify;">
+                    Wolf 359 is a red dwarf star located in the constellation Leo, near the ecliptic. At a distance of 7.86 light years (2.41 parsecs) from Earth, it has a magnitude of 13.54 and can only be seen with large telescopes. Wolf 359 is one of the faintest and most massive nearby stars known. In the light-emitting layer called the photosphere, the temperature is ~2,800 K, low enough for chemical compounds to form and survive. As a result of this significant magnetic activity, Wolf 359 is a flare star that can experience sudden and large increases in luminosity, which can last for several minutes. These flares emit powerful beams of X-ray and gamma-ray radiation that have been observed by space telescopes.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+                </div>
+                </div>
+            </div>
+        </div>
+        <!--Lalande 21185 STAR INFO-->
+        <div class="modal fade" id="lalande21185" tabindex="-1" role="dialog" aria-labelledby="expprocent" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="expprocent">LALANDE 21185 (Gliese 411)</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" style="text-align: justify;">
+                    Lalande 21185 (also known as BD+36 2147, Gliese 411, and HD 95735) is a star south of Ursa Major. Despite this, and because of its relatively close proximity, it is very faint (like all red dwarfs), only magnitude 7.5 in visible light. so it is too faint to see with the naked eye. This star is visible through a small telescope or binoculars. At a distance of 8.3 light years (2,546 parsecs), this star is one of the closest stars to the Solar System. Because of its proximity, it is often the subject of astronomical surveys and other research and is known by various other names, the most common being Gliese 411 and HD 95735. In about 19,900 years, it will be at its closest point, about 4.65 ly (1, 43 pc) from the Sun, only half its current distance. Lalande 21185 has two known exoplanets and one exoplanet candidate, making it the second closest confirmed planetary system to the Solar System.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+                </div>
+                </div>
+            </div>
+        </div>
+        <!--Sirius A STAR INFO-->
+        <div class="modal fade" id="siriusa" tabindex="-1" role="dialog" aria-labelledby="expprocent" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="expprocent">Sirius A</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-dark" style="text-align: justify;">
+                    Sirius A, also known as the Dog Star, has a mass of 2 Sun mass. The radius of this star has been measured by an astronomical interferometer, giving an estimated angular diameter of 5.936±0.016 mas. The projected rotational velocity is a relatively low 16 km/s, which does not produce any significant flattening of its disk. This is at marked variance with the similar-sized Vega, which rotates at a much faster 274 km/s and bulges prominently around its equator. A weak magnetic field has been detected on the surface of Sirius A. Stellar models suggest that the star formed during the collapsing of a molecular cloud and that, after 10 million years, its internal energy generation was derived entirely from nuclear reactions. The core became convective and used the CNO cycle for energy generation. It is calculated that Sirius A will have completely exhausted the store of hydrogen at its core within a billion (10<sup>9</sup>) years of its formation, and will then evolve away from the main sequence. It will pass through a red giant stage and eventually become a white dwarf.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+        <!--Sirius B STAR INFO-->
+        <div class="modal fade" id="siriusb" tabindex="-1" role="dialog" aria-labelledby="expprocent" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="expprocent">Sirius B</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" style="text-align: justify;">
+                    <p class="mb-4">Sirius B, also known as the Pup Star, is one of the most massive white dwarfs known. With a mass of 1.02 Solar mass, it is almost double the 0.5–0.6  Solar mass average. This mass is packed into a volume roughly equal to the Earth's. The current surface temperature is 25,200 K. Because there is no internal heat source, Sirius B will steadily cool as the remaining heat is radiated into space over the next two billion years or so.</p>
+                    <p class="mb-4">A white dwarf forms after a star has evolved from the main sequence and then passed through a red giant stage. This occurred when Sirius B was less than half its current age, around 120 million years ago. The original star had an estimated 5  Solar mass and was a B-type star (most likely B5V for 5 Solar mass) when it was still on the main sequence, potentially burning around 600–1200 times more luminous than the sun. While it passed through the red giant stage, Sirius B may have enriched the metallicity of its companion, explaining the very high metallicity of Sirius A.</p>
+                    <p>This star is primarily composed of a carbon–oxygen mixture that was generated by helium fusion in the progenitor star. This is overlaid by an envelope of lighter elements, with the materials segregated by mass because of the high surface gravity. The outer atmosphere of Sirius B is now almost pure hydrogen—the element with the lowest mass—and no other elements are seen in its spectrum.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+        <!--GLIESE 65 A STAR INFO-->
+        <div class="modal fade" id="gliese65a" tabindex="-1" role="dialog" aria-labelledby="expprocent" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="expprocent">Gliese 65 A (BL CETI)</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" style="text-align: justify;">
+                    Gliese 65, also known as Luyten 726-8, is a binary star system that is one of Earth's closest neighbors, located approximately 8.7 light years from Earth in the constellation Cetus. They orbit each other every 26.5 years. The distance between the two stars varies from 2.1 to 8.8 astronomical units. The Gliese 65 system is approximately 2.63 parsecs (8.58 light years) from Earth's Solar System, in the constellation Cetus, and is the seventh closest star system to Earth. Gliese 65 A was later discovered to be a variable star and given the designation BL Ceti variable star. This is a red dwarf with spectral type M5.5V. It is also a flare star, and is classified as a UV Ceti variable type, but its behavior is not as extraordinary or extreme as its companion star, UV Ceti.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+        <!--GLIESE 65 B STAR INFO-->
+        <div class="modal fade" id="gliese65b" tabindex="-1" role="dialog" aria-labelledby="expprocent" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="expprocent">Gliese 65 B (UV CETI)</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" style="text-align: justify;">
+                    Soon after the discovery of Gliese 65 A, the companion star Gliese 65 B was discovered. Like Gliese 65 A, this star was also found to be variable and was given the name UV Ceti variable star. Although UV Ceti was not the first flare star discovered, it is the most prominent example of such a star, such that similar flare stars are now classified as UV Ceti type variable stars. This star experienced quite extreme changes in brightness, for example in 1952, its brightness increased 75 times in just 20 seconds. UV Ceti is a red dwarf with spectral type M6V.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+        <!--Ross 154 STAR INFO-->
+        <div class="modal fade" id="ross154" tabindex="-1" role="dialog" aria-labelledby="expprocent" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="expprocent">Ross 154 (V1216 Sgr)</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" style="text-align: justify;">
+                    is a star in the southern zodiac constellation of Sagittarius. It has an apparent visual magnitude of 10.44, making it much too faint to be seen with the naked eye. At a minimum, viewing Ross 154 requires a telescope with an aperture of 6.5 cm (3 in) under ideal conditions. The distance to this star can be estimated from parallax measurements, which places it at 9.71 light-years (2.98 parsecs) away from Earth. It is the nearest star in the southern constellation Sagittarius, and one of the nearest stars to the Sun.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Javascript On File-->
+    <script type="text/javascript" src="script.js"></script>
+    <!--Javascript Bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
